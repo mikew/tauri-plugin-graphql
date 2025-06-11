@@ -218,7 +218,7 @@ use async_graphql::{
 use serde::Deserialize;
 #[cfg(feature = "graphiql")]
 use std::net::SocketAddr;
-use tauri::{plugin::{self, TauriPlugin}, ipc::{Invoke, InvokeError}, Manager, Runtime};
+use tauri::{ipc::{Invoke, InvokeError}, plugin::{self, TauriPlugin}, Emitter, Manager, Runtime};
 use tauri::ipc::InvokeBody;
 
 fn invoke_handler<R, Query, Mutation, Subscription>(
