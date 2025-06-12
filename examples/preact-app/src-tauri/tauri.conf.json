@@ -31,6 +31,8 @@
           "windows": ["*"],
           "permissions": [
             "graphql:allow-graphql",
+
+            "core:event:allow-listen",
             "graphql:allow-subscriptions"
           ]
         }
