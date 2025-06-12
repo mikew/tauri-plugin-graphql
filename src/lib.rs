@@ -392,9 +392,8 @@ where
 {
   use async_graphql::http::GraphiQLSource;
   use async_graphql_warp::{GraphQLBadRequest, GraphQLResponse};
-  use http::StatusCode;
   use std::convert::Infallible;
-  use warp::{http::Response as HttpResponse, Filter, Rejection};
+  use warp::{http::Response as HttpResponse, Filter, Rejection, http::StatusCode};
 
   let graphiql_addr: SocketAddr = graphiql_addr.into();
 
